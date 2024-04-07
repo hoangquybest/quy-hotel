@@ -28,7 +28,7 @@ public class Room {
     private BigDecimal roomPrice;
     private boolean isBooked = false;
     @Lob
-    private Blob proto;
+    private Blob photo;
 
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<BookedRoom> bookings;
